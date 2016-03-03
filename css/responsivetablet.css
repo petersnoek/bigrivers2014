@@ -1,0 +1,420 @@
+/* RESPONSIVE STYLESHEET */
+@media only screen and (min-device-width: 768px){
+	html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		font-family: 'Open Sans', sans-serif;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	body {
+		margin: 0;
+		padding: 0;
+		background: url(../img/achtergrond-4000.jpg) no-repeat;
+		background-position:center; 
+		background-attachment: fixed;
+		-webkit-background-size: auto 100%;
+		-moz-background-size: auto 100%;
+		-o-background-size: auto 100%;
+		background-size: auto 100%;
+		overflow-x: hidden;
+	}
+
+	#bgwrapper {
+		position: relative;
+		z-index: 10;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		/* -webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-ms-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s; */
+
+	}
+}
+
+#wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+	width: 100%;
+	height: 100%;
+
+/*     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	-webkit-transform: translateZ(0); */
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.8); */
+	cursor: pointer;
+}
+
+.mobile-alternative {
+	position: relative;
+	top: 150px;
+	width: 100%;
+	text-align: center;
+}
+
+.mobile-alternative h1 {
+	margin: 0;
+	color: #fff;
+}
+
+.menu {
+    position: fixed;
+	height: 100%;
+    z-index: 20;
+    background-color: #fff;
+/*     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+	-webkit-transform: translateZ(0); */
+	border-radius: 0px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.menu .site-title {
+	display: block;
+	width: 200px;
+	height: 50px;
+	text-align: center;
+}
+
+.menu .site-title h1 {
+	color: #572680;
+}
+
+#menu-wrapper {
+	float: left;
+	position: relative;
+	width: 200px;
+}
+
+#menu-wrapper ul, #menu-wrapper ul li {
+	list-style: none;
+	padding: 0;
+	vertical-align: baseline;
+	line-height: 1;
+}
+
+#menu-wrapper ul li {
+ 	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%; 
+}
+
+#menu-wrapper ul li a {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 11px 20px;
+	font-family: calibri;
+	color: #1d1d1b;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+#menu-wrapper > ul .has-sub a.sub {
+	color: #fff;
+	background-color: #4f4d4d;
+	cursor: none;
+}
+
+#menu-wrapper ul li ul {
+	position: relative;
+	display: block;
+	float: none;
+	width: 200px;
+	height: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding: 0px;
+}
+
+#menu-wrapper ul li ul li {
+	display: block;
+}
+
+#menu-wrapper ul li ul li:hover {
+	background-color: #fff;
+}
+
+#menu-wrapper ul li:hover ul li{
+	display: block;
+	top: 0px;
+	left: 0px;
+}
+
+/*/ Push the menu /*/
+
+.push-menu-left {
+    top: 0;
+    width: 200px;
+    height: 100%;
+}
+
+.push-menu-left {
+    left: -200px
+}
+
+body.pml-open .push-menu-left {
+    left: 0
+}
+
+body.pml-open #bgwrapper {
+    left: 200px
+}
+
+body.pml-open #wrapper {
+    left: 200px
+}
+
+#navbarhead {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 50px;
+		opacity: 1;
+		background-color: #522b7e;
+}
+
+#navbarhead a.logo {
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	background: url(../img/logomobile.png);
+}
+
+#nav-icon {
+		display:inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		background: url(../img/naviconmobile.png);
+		cursor: pointer;
+}
+
+.controls {
+	display: none;
+}
+
+.menu .logo {
+	display: none;
+}
+
+/*//////////////	Slider		/////////////////// */
+
+#carousel {
+	display: none;
+}
+
+/* Social media icons in menu styling */
+#social {
+	position: relative;
+	float: left !important;
+	padding-top: 35px;
+	margin:0 auto;
+}
+
+#social ul {
+	display: inline;
+	margin: 0;
+	margin-top:5px;
+	margin-bottom: 5px;
+	padding: 0;
+	list-style-type: none;
+}
+
+#social li {
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#social a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+}
+
+#social a:hover{
+	background-color: none;
+}
+
+#social img {
+	border: none;
+}
+
+/* Content section */
+
+#container {
+	position: relative;
+	top: 60px;
+	left: 0;
+	width: 95%;
+	margin: 0 auto;
+}
+
+/*Line up*/
+#content #lineup {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+#content #lineup .artist-block {
+	display: inline-block;
+	position: relative;
+	width: 225px;
+	margin: 5px;
+	padding: 5px;
+	height: 250px;
+	background-color: #fff;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.3);
+}
+
+#content #lineup .artist-block .pic {
+	width: 205px;
+	height: 170px;
+}
+
+#content #lineup .artist-block .date {
+	height: 80px;
+	width: 100%;
+	text-align: left;
+}
+
+#content #lineup .artist-block label {
+	display: block;
+	font-weight: 600;
+	color: #522b7e;
+	font-size: 0.9em;
+}
+
+#content #lineup .artist-block h3 {
+	margin: 0;
+	font-size: 0.8em;
+	font-weight: 600;
+	color: #000;
+}
+
+#content #lineup .artist-block h4 {
+	margin: 0;
+	font-size: 0.8em;
+	color: #000;
+}
+
+#content .guidetable {
+	float: left;
+	width: 100%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#content .guidetable table {
+	width: 100%;
+}
+
+#content .guidetable td {
+	color: #fff;
+}
+
+/* Stages Overview */
+
+#stages {
+	
+}
+
+#stages .col {
+	float: left;
+	width: 100%;
+}
+
+#stages .col .inner-col {
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #522b7e;
+}
+
+#stages .day h1 {
+	float: left;
+	clear: both;
+	width: 100%;
+	color: #fff;
+}
+
+#stages h2.stage {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding: 2px 10px 3px 10px;
+	background-color: rgba(0,0,0,0.1);
+	margin-bottom: 0;
+}
+
+#stages ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#stages li {
+	font-size: 1.11111em;
+	line-height: 1.35em;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: .5em;
+	padding: 0.4em 1em;
+}
+
+#stages li::before,
+#stages li::after {
+	display: table;
+	content: '';
+}
+
+#stages span.time {
+	width: 80px;
+	display: block;
+	float: left;
+	clear: both;
+	padding: 0.5em;
+	margin: 0.15em 1em 0.5em 0;
+	background-color: rgba(255,255,255,0.5);
+	font-size: 0.7em
+}
+
+#stages .performance a {
+	display: block;
+	clear: both;
+	color: #fff;
+}
